@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main-menu{ background-color:blue;  }
+        #main-menu ul { margin: 0px; padding: 0px }
+        #main-menu ul li {
+            list-style: none;
+            display: inline-block;
+        }
+        #main-menu ul li a{
+            color: yellow;
+            display: block;
+            padding: 5px;
+            text-decoration: none;
+            width: 100px;
+            text-align:center;
+            font-family:Arial;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        #main-menu ul li a:hover{
+            background-color: yellow;
+            color: red;
+        }
+        /*Tạo css cho mobile*/
+        @media screen and (max-width: 600px) {
+            #main-menu ul li {
+                display: block;
+            }
+            #main-menu ul li a{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="main-menu">
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>

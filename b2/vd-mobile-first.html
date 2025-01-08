@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Thứ tự sẽ đi từ trên xuống dưới*/
+        /* phần chung sẽ dành cho mobile */
+
+        .title { color: brown; }
+        .content { color: green; }
+
+
+        /* máy tính bảng */
+         @media only screen and (min-width: 768px) {
+            
+            .title { color: orange; }
+            .content { color: aqua; }
+        }
+       /* desktop */
+        @media only screen and (min-width: 1024px) {
+            .title { color: red; }
+            .content { color: blue; }
+        }  
+    </style>
+</head>
+<body>
+    <h2 class="title">Mobile First</h2>
+    <p class="content">Ví dụ về nguyên tắc Mobile First bằng
+    cách sử dụng thuộc tính min-width. Giao diện thay đổi khi
+    độ rộng màn hình lớn hơn hoặc bằng break point (điểm
+    ngắt) mà @media đã chỉ định.</p>
+</body>
+</html>
