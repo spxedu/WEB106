@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        body{margin: 0px; padding: 0px}
+        .container{ max-width: 1200}
+        #k1, #k5 { min-height: 100px}
+        #k2,#k3,#k4 { min-height: 300px}
+        #k1 {background-color: blue}
+        #k2 {background-color: green}
+        #k3 {background-color: yellow}
+        #k4 {background-color: cyan}
+        #k5 {background-color: #ccc}
+        /* Máy tính bảng */
+        @media screen and (min-width: 768px) {
+            #k2, #k3{ float: left;}
+            #k2 { width: 20%;}
+            #k3 {width: 80%;}
+            #k4{ clear: both;}
+        }
+        /* desktop */
+        @media screen and (min-width: 1000px) {
+            #k3 {width: 60%;}
+            #k4 {float: left; clear:none; width: 20%;}
+            #k5 {clear: both;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="k1">Khối 1</div>
+        <div id="k2">Khối 2</div>
+        <div id="k3">Khối 3</div>
+        <div id="k4">Khối 4</div>
+        <div id="k5">Khối 5</div>
+    </div>
+</body>
+</html>
