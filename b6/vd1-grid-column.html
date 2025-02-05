@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Sử dụng grid column kết hợp template để chia cột */
+        .container{
+            display: grid;
+            grid-template-columns: 200px 500px 200px;
+        }
+        /* .container div{
+            width: 50px;
+            height: 20px;
+        } */
+        .k1{ background-color: yellow; grid-column:1/4}
+        .k2{ background-color: blue; grid-column:1/4}
+        .k3{ background-color: green;}
+        .k4{ background-color: cyan}
+        .k5{ background-color: red}
+        .k6{ background-color: pink; grid-column:1/4}
+        .k7{ background-color: black; grid-column:1/4}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="k1">1</div>
+        <div class="k2">2</div>
+        <div class="k3">3</div>
+        <div class="k4">4</div>
+        <div class="k5">5</div>
+        <div class="k6">6</div>
+        <div class="k7">6</div>
+    </div>
+</body>
+</html>
