@@ -8,23 +8,20 @@
         /* Sử dụng grid row kết hợp template để chia cột */
         .container{
             display: grid;
-            grid-template-columns: 50px 50px 50px 50px  50px ; 
-            grid-template-rows: 50px 50px 50px;
+            grid-template-columns: 200px 500px 200px;
+            grid-template-rows: 100px 100px 100px 100px 100px
         }
         /* .container div{
             width: 50px;
             height: 20px;
         } */
-        .k1{ background-color: yellow;  }
-        .k2{ background-color: blue; grid-area: 1/2/3/5 }
-        .k3{ background-color: green;}
+        .k1{ background-color: yellow; grid-column: 1/4 }
+        .k2{ background-color: blue; grid-column: 1/4}
+        .k3{ background-color: green;grid-row: 3/6}
         .k4{ background-color: cyan}
         .k5{ background-color: red}
-        .k6{ background-color: pink; }
-        .k7{ background-color: black;}
-        .k8{ background-color: #ccc}
-        .k9{ background-color: #ddd; }
-        .k10{ background-color: #bbb;}
+        .k6{ background-color: pink; grid-column: 2/4}
+        .k7{ background-color: black;grid-column: 2/4}
     </style>
 </head>
 <body>
@@ -35,11 +32,7 @@
         <div class="k4">4</div>
         <div class="k5">5</div>
         <div class="k6">6</div>
-        <div class="k7">7</div>
-        <div class="k8">8</div>
-        <div class="k9">9</div>
-        <div class="k10">10</div>
-
+        <div class="k7">6</div>
     </div>
 </body>
 </html>
