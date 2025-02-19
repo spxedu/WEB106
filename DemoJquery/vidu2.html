@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Tạo form login, có username và pass, nút bấm. Khi bấm nút, nếu chưa nhập
+        thì báo đỏ lỗi, nếu đã nhập thì báo xanh
+    </p>
+    <form action="" method="post">
+        <h2>Login</h2>
+        <p id="msg"></p>
+        <label>Username</label><input type="text" name="username" /> <br>
+        <label>Password</label><input type="password" name="password" /> <br>
+        <button type="button" id="btn-submit">Login</button>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $().ready(()=>{
+            $('#btn-submit').click( ()=>{ 
+                // lấy nội dung nhập
+                let u = $('input[name=username]').val(); // val() lấy value 
+                let p = $('input[name=password]').val();
+                if(u.length < 3){
+                    // thông báo lỗi
+                    $('#msg').html('<b>Lỗi rồi:</b> Bạn cần nhập username từ 3 ký tự')//
+                }
+            });
+        });
+    </script>
+</body>
+</html>

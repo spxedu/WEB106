@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<body>
+		<img width="200" src="https://i1-vnexpress.vnecdn.net/2025/02/19/20250218T220354Z1268550723RC28-2836-5814-1739951999.jpg?w=680&h=408&q=100&dpr=2&fit=crop&s=64XJk67llg4IGFra9QMvfQ"/>
+
+        <button id="btn-show-hide">Ẩn hiện ảnh</button>
+
+		
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <script>
+            $(document).ready( ()=>{ 
+                // chọn theo tên thẻ, chạy thử từng cách
+                // $('button').click ( ()=>{
+                //     $('img').hide();// ẩn ảnh
+                // } );
+
+                // // cách 2: chọn theo ID
+                $('#btn-show-hide').click( ()=>{
+                    $('img').toggle(500);// ẩn hoặc hiện
+                })
+                
+            }  );
+        
+            // $().ready( ()=>{
+
+            // });
+
+            
+
+
+
+        </script> 
+
+	</body>
+</html>
